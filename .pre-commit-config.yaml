@@ -13,6 +13,10 @@ repos:
       - id: debug-statements
       - id: fix-byte-order-marker
       - id: trailing-whitespace
-        exclude: ^flask_admin/static/
+        exclude: >-
+          (?x)^(
+            flask_admin/static/|
+            \.github/workflows/tests\.yaml
+          )
       - id: end-of-file-fixer
         exclude: ^flask_admin/static/

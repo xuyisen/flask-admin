@@ -180,6 +180,7 @@ def test_admin_customizations(app, babel):
                 "admin.static", filename="bootstrap/bootstrap4/css/bootstrap.min.css"
             )
         )
+        rv.close()
     assert rv.status_code == 200
 
 
